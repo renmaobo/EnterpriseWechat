@@ -13,14 +13,14 @@ namespace EnterpriseWechat
         public AccessToken() { }
 
         /// <summary>
-        /// 
+        /// add enterprise setting
         /// </summary>
         /// <param name="corpid">enterprise id</param>
         /// <param name="corpsecret">enterprise application secret code</param>
-        private AccessToken(string corpid, string corpsecret)
+        private void AddSetting(string corpid, string corpsecret)
         {
             this.CorpId = corpid;
-            this.Corpsecret = corpsecret;
+            this.CorpSecret = corpsecret;
         }
 
         /// <summary>
@@ -39,13 +39,12 @@ namespace EnterpriseWechat
         /// <param name="corpid">enterprise id</param>
         /// <param name="corpsecret">enterprise application secret code</param>
         /// <returns></returns>
-        public AccessToken GetAccessToken(string corpid, string corpsecret)
+        public static AccessToken GetAccessToken(string corpid, string corpsecret)
         {
-            AccessToken accessToken = new AccessToken(corpid, corpsecret);
-
             string requestUrl = $"{ShareSetting.EnterpriseWechat_DomainUrl}/cgi-bin/gettoken?corpid={corpid}&corpsecret={corpsecret}";
 
-            requestUrl.HttpGet<AccessToken>();
+            AccessToken accessToken = requestUrl.HttpGet<AccessToken>();
+            accessToken.AddSetting(corpid, corpsecret);
 
             return accessToken;
         }
