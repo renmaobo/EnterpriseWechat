@@ -12,7 +12,7 @@ namespace EnterpriseWechat.XUnitTest
         public void Test()
         {
             AccessToken accessToken = AccessToken.GetAccessToken(EnterpriseSetting.CorpId, EnterpriseSetting.ApplicationSecret);
-            Assert.Equal(accessToken.ErrorCode, ResultStatusType.Success);
+            Assert.Equal(accessToken.ErrorCode, ResultStatusEnum.Success);
         }
     }
 }

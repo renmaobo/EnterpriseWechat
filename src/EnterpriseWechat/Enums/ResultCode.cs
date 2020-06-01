@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EnterpriseWechat
+namespace EnterpriseWechat.Enums
 {
     /// <summary>
-    /// response result status type.
+    /// response result code.
     /// </summary>
-    public enum ResultStatusType : int
+    public enum ResultCode : int
     {
         /// <summary>
         /// request success

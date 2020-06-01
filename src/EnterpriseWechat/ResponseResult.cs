@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using EnterpriseWechat.Enums;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,13 +9,21 @@ namespace EnterpriseWechat
     /// <summary>
     /// base response result
     /// </summary>
-    public class BaseResult
+    public class ResponseResult
     {
+        public ResponseResult() { }
+
+        public ResponseResult(ResultCode code, string msg)
+        {
+            this.ErrorCode = code;
+            this.ErrorMessage = msg;
+        }
+
         /// <summary>
         /// response result status code
         /// </summary>
         [JsonProperty("errcode")]
-        public ResultStatusType ErrorCode { get; set; }
+        public ResultCode ErrorCode { get; set; }
 
         /// <summary>
         ///  response result message describe

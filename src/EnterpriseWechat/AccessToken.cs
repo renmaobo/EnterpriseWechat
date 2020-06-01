@@ -8,7 +8,7 @@ namespace EnterpriseWechat
     /// <summary>
     /// 
     /// </summary>
-    public class AccessToken : BaseResult
+    public class AccessToken : ResponseResult
     {
         public AccessToken() { }
 

@@ -10,6 +10,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Extensions", "..\..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnterpriseWechat.XUnitTest", "EnterpriseWechat.XUnitTest\EnterpriseWechat.XUnitTest.csproj", "{A1C09624-1A75-403F-98A6-62566C5A7932}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseWechat.InternalDevelopment", "EnterpriseWechat.InternalDevelopment\EnterpriseWechat.InternalDevelopment.csproj", "{773E4653-3A30-4A37-91D9-CA8F8C085750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseWechat.ThirdpartyDevelopment", "EnterpriseWechat.ThirdpartyDevelopment\EnterpriseWechat.ThirdpartyDevelopment.csproj", "{FE07F55B-888A-4EB3-A1E5-E733CBDFFF61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{A1C09624-1A75-403F-98A6-62566C5A7932}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1C09624-1A75-403F-98A6-62566C5A7932}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1C09624-1A75-403F-98A6-62566C5A7932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{773E4653-3A30-4A37-91D9-CA8F8C085750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{773E4653-3A30-4A37-91D9-CA8F8C085750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{773E4653-3A30-4A37-91D9-CA8F8C085750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{773E4653-3A30-4A37-91D9-CA8F8C085750}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE07F55B-888A-4EB3-A1E5-E733CBDFFF61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE07F55B-888A-4EB3-A1E5-E733CBDFFF61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE07F55B-888A-4EB3-A1E5-E733CBDFFF61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE07F55B-888A-4EB3-A1E5-E733CBDFFF61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
